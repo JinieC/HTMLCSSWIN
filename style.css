@@ -1,0 +1,445 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------------------*/
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: "Noto Sans TC";
+    line-height: 1.5;
+    font-weight: 500;
+    background-color: #FBFBFB;
+
+}
+
+
+img{
+    display:block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    }
+
+
+
+.header ul{
+    display: flex;
+    justify-content:center;
+}
+.header li{
+    font-size: 28px;
+    font-weight: 700;
+    gap: 8px;
+    padding: 24px 20px;
+}
+.header a{
+    text-decoration: none;
+    color: #000;
+}
+.banner{
+    display: flex;
+    height: calc(100vh - 90px);
+    width: 100%;
+    
+}
+
+.banner_photo{
+    width: 50%;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner_introduce {
+    width: 50%;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.banner_content{
+    text-align: left;
+    color: #0027D5;
+    margin-left: 80px;
+}
+
+.banner_content h1{
+    font-size: 120px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+}
+
+.banner_content p{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+
+.newblog {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newblog_info {
+    width: 636px;
+    margin-left: 24px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+
+.newblog_photo{
+    width: 50%;
+    height: 640px;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/About%20Section.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    }
+
+.newblog_info h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom:8px;}
+  
+.newblog_info .date{
+    margin-bottom:4px;}
+  
+.newblog_info .cont{
+    margin-bottom:16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;  /* 限制顯示的行數為 3 行 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  
+
+.container{
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.Search {
+    width:416px;
+    height:56px;
+    border: 1px solid #4B4B4B;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    gap: 10px;
+}
+.Search input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #4B4B4B;
+    flex-grow: 1;
+    background-color: transparent;
+}
+
+.icon_search {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    fill: #4B4B4B;
+}
+
+.blog_content ul{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 24px;
+}
+.blog_content li{
+    width: calc(33.33% - 16px);
+    box-sizing: border-box;
+    text-align: left;
+    margin: 40px 0px;
+
+    }
+
+  
+.blog_content li img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px; }
+  
+.ht {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    
+}
+.Hashtag {
+    color:#0027D5;
+    font-size: 24px;
+    line-height: 1.5;
+    text-decoration: none;
+    }
+  
+.badge{
+    font-size: 16px;
+    color:#FFF;
+    background-color: #0027D5; 
+    border-radius: 40px;
+    padding: 6px 12px;
+    white-space: nowrap;
+    font-weight: normal;
+
+    }
+  
+ .blog_content  li h2{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom:8px;}
+  
+ time{
+    font-size: 16px;
+    margin-bottom:4px;}
+  
+ .blog_content li .cont{
+    margin-bottom:16px;
+    color:#4B4B4B;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;  /* 限制顯示的行數為 3 行 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  
+.readmore{
+
+    text-decoration: none;
+    color:#4B4B4B;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    padding: 8px 16px;
+    display: inline-block;}
+
+.page{
+    display: block;
+    width: max-content;
+    background-color:#ffffff;
+    border-radius: 40px;
+    padding: 0px 16px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.page ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}    
+
+.page_no{
+    width: 40px;
+    height: auto;
+    text-align: center;
+    padding: 8px 0px}
+
+.icon_chevron svg{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: block;
+    vertical-align: middle;
+    
+}
+.page a{
+    
+    padding: 8px 0px;
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+
+.icon svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: block;
+    color: #0027D5;
+    margin: 10px;
+}
+
+.contact{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin: 80px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact ul{
+    display: flex;
+    gap: 4px;
+}
+.email{
+    font-size: 32px;
+    color: #000;;
+    padding-right: 24px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+
+.footer {
+    text-align: center;
+    margin: 24px 0px;
+    background: #FFF;
+    width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .banner_photo,
+    .banner_introduce {
+        width: 100%;
+    }
+
+    .banner {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .banner_content h1 {
+        font-size: 52px;
+    }
+
+    .banner_photo {
+        height: calc(100vh - 90px - 180px);
+    }
+
+    .banner_introduce {
+        padding: 24px;
+    }
+
+    .banner_content {
+        margin-left: 0px;
+    }
+
+    .newblog {
+        flex-direction: column;
+      }
+    
+    .newblog_photo {
+        width: 100%;
+        height: 375px;
+        margin-left: 0;
+      }
+    .newblog_info {
+        width: 100%;
+        margin: 48px 12px;}
+
+    .newblog_info .cont{
+        -webkit-line-clamp: 2}
+
+    .blog_content li{
+        width: 100%;
+        margin: 16px 0px;}
+
+    .blog_content ul{
+        flex-direction: column;
+    }
+    
+    .blog_content li .cont{
+        -webkit-line-clamp: 2;}
+
+    .container {
+        width: 100%;
+        margin: 64px 12px;
+        }
+
+    .blog_content{
+        margin: 40px 0px;
+    }
+    .Search {
+        width: 100%;
+        }
+
+    .email {
+        font-size: 20px;
+        width: auto;
+        padding-right: 0;
+    }
+
+    .contact {
+        display: none;
+    }
+    
+}
