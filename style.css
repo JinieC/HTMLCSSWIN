@@ -48,11 +48,13 @@ table {
 }
 
 /*--------------------*/
-* {
-    box-sizing: border-box;
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
+
 body{
-    font-family: "Noto Sans TC";
+    font-family: "Noto Sans TC", serif;
     line-height: 1.5;
     font-weight: 500;
     background-color: #FBFBFB;
@@ -142,7 +144,7 @@ img{
 }
 
 .newblog_info {
-    width: 636px;
+    width: calc(50% - 24px);
     margin-left: 24px;
     background-size: cover;
     background-position: center;
@@ -187,6 +189,7 @@ img{
     width: 100%;
     max-width: 1320px;
     margin: 0 auto;
+    padding: 0px 12px ;
 }
 
 .Search {
@@ -358,12 +361,25 @@ img{
 
 .footer {
     text-align: center;
-    margin: 24px 0px;
+    padding: 24px 0px;
     background: #FFF;
     width: 100%;
+    border-top: 1px solid #FFF;
 }
 
+@media (min-width: 769px) and (max-width: 1319px) {
+  .banner_content h1 {
+    font-size: 72px;
+  }
 
+  .banner_content p {
+    font-size: 20px;
+  }
+
+  .banner_content {
+    margin-left: 40px;
+  }
+}
 
 @media (max-width: 768px) {
 
@@ -404,7 +420,7 @@ img{
       }
     .newblog_info {
         width: 100%;
-        margin: 48px 12px;}
+        padding: 48px 12px;}
 
 
     .blog_content li{
@@ -417,7 +433,7 @@ img{
 
     .container {
         width: 100%;
-        margin: 64px 12px;
+        padding: 64px 12px;
         }
 
     .blog_content{
